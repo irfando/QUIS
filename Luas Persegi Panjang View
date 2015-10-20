@@ -1,0 +1,21 @@
+# luaspersegipanjang.view
+package pertemuan_5_view;
+
+import pertemuan_5_perhitungan.Luaspersegipanjang;
+
+public class persegipanjang extends javax.swing.JPanel {
+    
+    public persegipanjang() {
+        initComponents();
+    }
+    
+    private void luasActionPerformed(java.awt.event.ActionEvent evt) {                                     
+        Luaspersegipanjang a = new Luaspersegipanjang();
+        int panjang = Integer.parseInt(jTextField1.getText());
+        int lebar = Integer.parseInt(jTextField2.getText());
+        
+        int hasil = (int) a.LuasPersegiPanjang(panjang,lebar);
+        
+        jLabel3.setText("Hasil = "+hasil);
+        
+    }
