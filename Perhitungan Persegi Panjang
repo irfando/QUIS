@@ -1,0 +1,12 @@
+# persegipanjang.perhitungan
+package pertemuan_5_perhitungan;
+
+
+public class Luaspersegipanjang {
+    double luas ;
+    public double LuasPersegiPanjang (int panjang, int lebar){
+       luas = panjang * lebar ;
+       return luas ;
+    }
+    
+}
